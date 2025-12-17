@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power Gym Barhalganj | Fitness & Strength Training</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Power Gym Barhalganj – Best gym for strength training, cardio, weight loss and bodybuilding with modern equipment and expert trainers.">
+  <meta name="keywords" content="Power Gym Barhalganj, Gym in Barhalganj, Fitness Center, Bodybuilding Gym">
+  <meta name="author" content="Power Gym Barhalganj">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+  
+  html {
+      scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 90px;
+}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0d0d0d;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* ===== NAVBAR ===== */
+.nav-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 14px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 30, 0, 0.2);
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-logo span {
+  color: #ff1e00;
+}
+
+/* Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-menu a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* Hover underline */
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #ff1e00;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+.nav-menu a:hover {
+  color: #ff1e00;
+}
+
+/* CTA */
+.nav-cta {
+  background: #ff1e00;
+  color: #fff !important;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.nav-cta:hover {
+  background: #fff;
+  color: #000 !important;
+}
+
+/* Hamburger */
+.nav-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #000;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 0;
+    display: none;
+    border-top: 1px solid rgba(255,30,0,0.3);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu a {
+    font-size: 1.1rem;
+  }
+}
+
+    .hero {
+      height: 90vh;
+      background: linear-gradient(
+          rgba(0,0,0,0.7),
+          rgba(0,0,0,0.7)
+        ),
+        url("https://images.unsplash.com/photo-1599058917212-d750089bc07d") center/cover;
+      display: flex;
+      align-items: center;
+      padding: 0 10%;
+    }
+
+    .hero-content h2 {
+      font-size: 3rem;
+      color: #ff1e00;
+    }
+
+    .hero-content p {
+      margin: 20px 0;
+      max-width: 500px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ff1e00;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h3 {
+      color: #ff1e00;
+      font-size: 2rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h4 {
+      margin: 15px 0;
+      color: #ff1e00;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .price-box {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .price-box h4 {
+      color: #ff1e00;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h2 {
+        font-size: 2.2rem;
+      }
+    }
+    .hero {
+  height: 90vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.75),
+      rgba(0,0,0,0.75)
+    ),
+    url("https://images.unsplash.com/photo-1599058917212-d750089bc07d") center/cover;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  color: #ff1e00;
+}
+
+.hero-image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255,30,0,0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-height: 250px;
+    margin-top: 25px;
+    border-radius: 15px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="nav-wrapper">
+  <div class="nav-logo">Power<span>Gym</span></div>
+
+  <div class="nav-toggle" id="navToggle">
+    ☰
+  </div>
+
+  <nav class="nav-menu" id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#plans">Plans</a>
+    <a href="#contact" class="nav-cta">Join Now</a>
+  </nav>
+</header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+  <div class="hero-inner">
+    <!-- Left Content -->
+    <div class="hero-content">
+      <h2>Power Gym Barhalganj</h2>
+      <p>
+        Build strength, confidence, and discipline with world-class gym
+        equipment and expert trainers.
+      </p>
+      <a href="#" class="btn">Join Now</a>
+    </div>
+
+    <!-- Right Image -->
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883" alt="Gym Training">
+    </div>
+  </div>
+</section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="section-title">
+      <h3>Our Services</h3>
+    </div>
+
+    <div class="services">
+      <div class="card">
+        <h4>Strength Training</h4>
+        <p>Advanced equipment for muscle building and power training.</p>
+      </div>
+
+      <div class="card">
+        <h4>Cardio Zone</h4>
+        <p>Treadmills, cycles, and cross trainers for fat burning.</p>
+      </div>
+
+      <div class="card">
+        <h4>Personal Training</h4>
+        <p>Certified trainers to guide your fitness journey.</p>
+      </div>
+
+      <div class="card">
+        <h4>Weight Loss</h4>
+        <p>Customized workout plans for fast and healthy results.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="about">
+      <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba" alt="Gym Image">
+      <div>
+        <h3 style="color:#ff1e00;">Why Choose Power Gym?</h3>
+        <p>
+          Power Gym Barhalganj is equipped with modern machines, clean
+          environment, and experienced trainers to help you reach your fitness
+          goals safely and effectively.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="plans">
+  <div class="section-title">
+    <h3>Membership Plans</h3>
+    <p style="color:#ccc; margin-top:10px;">
+      Flexible plans designed for beginners to professional athletes
+    </p>
+  </div>
+
+  <div class="pricing">
+    <!-- Monthly -->
+    <div class="price-box">
+      <h4>Monthly</h4>
+      <p style="font-size:1.5rem; font-weight:600;">₹1,000</p>
+
+      <ul style="list-style:none; margin-top:15px; color:#ccc;">
+        <li>✔ Gym Access</li>
+        <li>✔ Cardio & Weight Training</li>
+        <li>✔ Normal Trainer Guidance</li>
+        <li>✔ Flexible Timing</li>
+      </ul>
+    </div>
+
+    <!-- Quarterly -->
+    <div class="price-box" style="border:2px solid #ff1e00;">
+      <h4>Quarterly</h4>
+      <p style="font-size:1.5rem; font-weight:600;">₹2,700</p>
+
+      <ul style="list-style:none; margin-top:15px; color:#ccc;">
+        <li>✔ Full Gym Access</li>
+        <li>✔ Cardio, Strength & Cross Training</li>
+        <li>✔ Certified Trainer Support</li>
+        <li>✔ Diet & Workout Guidance</li>
+        <li>✔ Free Body Assessment</li>
+      </ul>
+    </div>
+
+    <!-- Yearly -->
+    <div class="price-box">
+      <h4>Yearly</h4>
+      <p style="font-size:1.5rem; font-weight:600;">₹9,000</p>
+
+      <ul style="list-style:none; margin-top:15px; color:#ccc;">
+        <li>✔ Unlimited Gym Access</li>
+        <li>✔ Dedicated Certified Trainer</li>
+        <li>✔ Personal Workout Plan</li>
+        <li>✔ Diet & Progress Tracking</li>
+        <li>✔ Priority Equipment Access</li>
+        <li>✔ Free Fitness Consultation</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Extra Info -->
+  <p style="text-align:center; margin-top:30px; color:#aaa;">
+    💪 *Personal training available separately. Contact us for customized plans.*
+  </p>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Power Gym Barhalganj | Designed for Demo Presentation
+  </footer>
+<script>
+  const toggle = document.getElementById("navToggle");
+  const menu = document.getElementById("navMenu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>
